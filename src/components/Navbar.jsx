@@ -35,13 +35,21 @@ const Navbar = ({ onSearch }) => {
                     variant="outlined"
                     value={searchCity}
                     onChange={(e) => setsearchCity(e.target.value)}
-                />
-                <Button variant='contained'
-                    onClick={handleSearchclick}
-                    style={{ borderRadius: '6px', backgroundColor: '#4B5550' }}>
-                    Search
+                    onKeyDown={(e) => {
+                            if (e.key === "Enter") {
+                                      handleSearchclick();
+                                 }
+                             }}
+                     />
+                 <Button
+                     variant="contained"
+                     onClick={handleSearchclick}
+                    style={{ borderRadius: '6px', backgroundColor: '#4B5550' }}
+                    >
+                  Search
                 </Button>
             </div>
+
             <div
                 style={{
                     marginTop: '1rem',
