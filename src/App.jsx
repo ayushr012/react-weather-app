@@ -1,9 +1,9 @@
 import './App.css';
 import React, { useState,useEffect } from "react";
-import Navbar from "../src/components/navbar";
+import Navbar from "../src/components/Navbar";
 import MainWeather from "../src/components/MainWeather";
 import FiveDayForecast from "../src/components/fiveday";
-import TodayHighlights from "../src/components/todayhighlights";
+import TodayHighlights from "../src/components/TodayHighlights";
 
 import axios from "axios";
 
